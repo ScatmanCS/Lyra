@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/EzQueueBungee.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/EzQueueClient.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/EzQueueServer.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/EzQueueSpigot.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/guava-15.0-rc1.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/guava-18.0.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/LCore.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/lombok.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/PermissionsEx-1.23.4.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/ProtocolLib.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/Vault.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/worldedit-bukkit-6.1.5.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/worldguard-6.2.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/zChat.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/zPermissions-1.3beta1.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/zSpigot.jar"/>
+	<classpathentry kind="lib" path="W:/development/Libaries/zSpigotAPI.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
