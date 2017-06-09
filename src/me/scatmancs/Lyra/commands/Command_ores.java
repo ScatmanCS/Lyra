@@ -33,16 +33,16 @@ public class Command_ores
       player.sendMessage("&Player not found");
       return true;
     }
-    sender.sendMessage("&7&m--------------------------------------------------");
-    sender.sendMessage("                     &eOres mined by: &6" + target.getDisplayName());
-    sender.sendMessage("&bDiamond Ore: &f" + target.getStatistic(Statistic.MINE_BLOCK, Material.DIAMOND_ORE));
-    sender.sendMessage("&aEmerald Ore: &f" + target.getStatistic(Statistic.MINE_BLOCK, Material.EMERALD_ORE));
-    sender.sendMessage("&7Iron Ore: &f" + target.getStatistic(Statistic.MINE_BLOCK, Material.IRON_ORE));
-    sender.sendMessage("&6Gold Ore: &f" + target.getStatistic(Statistic.MINE_BLOCK, Material.GOLD_ORE));
-    sender.sendMessage("&cRedstone Ore: &f" + target.getStatistic(Statistic.MINE_BLOCK, Material.REDSTONE_ORE));
-    sender.sendMessage("&8Coal Ore: &f" + target.getStatistic(Statistic.MINE_BLOCK, Material.COAL_ORE));
-    sender.sendMessage("&9Lapis Ore: &f" + target.getStatistic(Statistic.MINE_BLOCK, Material.LAPIS_ORE));
-    sender.sendMessage("&7&m--------------------------------------------------");
+    sender.sendMessage(ColorHandler.translate + "&7&m--------------------------------------------------");
+    sender.sendMessage(ColorHandler.translate + "                     &eOres mined by: &6" + target.getDisplayName());
+    sender.sendMessage(ColorHandler.translate + "&bDiamond Ore: &f" + target.getStatistic(Statistic.MINE_BLOCK, Material.DIAMOND_ORE));
+    sender.sendMessage(ColorHandler.translate + "&aEmerald Ore: &f" + target.getStatistic(Statistic.MINE_BLOCK, Material.EMERALD_ORE));
+    sender.sendMessage(ColorHandler.translate + "&7Iron Ore: &f" + target.getStatistic(Statistic.MINE_BLOCK, Material.IRON_ORE));
+    sender.sendMessage(ColorHandler.translate + "&6Gold Ore: &f" + target.getStatistic(Statistic.MINE_BLOCK, Material.GOLD_ORE));
+    sender.sendMessage(ColorHandler.translate + "&cRedstone Ore: &f" + target.getStatistic(Statistic.MINE_BLOCK, Material.REDSTONE_ORE));
+    sender.sendMessage(ColorHandler.translate + "&8Coal Ore: &f" + target.getStatistic(Statistic.MINE_BLOCK, Material.COAL_ORE));
+    sender.sendMessage(ColorHandler.translate + "&9Lapis Ore: &f" + target.getStatistic(Statistic.MINE_BLOCK, Material.LAPIS_ORE));
+    sender.sendMessage(ColorHandler.translate + "&7&m--------------------------------------------------");
     return false;
   }
 }
