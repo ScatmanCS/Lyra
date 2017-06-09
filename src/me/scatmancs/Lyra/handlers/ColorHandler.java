@@ -1,11 +1,12 @@
 package me.scatmancs.Lyra.handlers;
 
+import org.apache.commons.lang.StringEscapeUtils;
 import org.bukkit.ChatColor;
 
 public class ColorHandler
 {
-  public static String translate(String input)
-  {
-    return ChatColor.translateAlternateColorCodes('&', input);
-  }
+	  public String translate(String text)
+	  {
+	    return StringEscapeUtils.unescapeJava(ChatColor.translateAlternateColorCodes('&', text));
+	  }
 }
