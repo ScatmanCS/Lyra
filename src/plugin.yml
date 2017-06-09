@@ -1,0 +1,7 @@
+main: me.scatmancs.Lyra.Lyra
+author: ScatmanCS
+name: Lyra
+
+commands:
+  ores:
+    description: Check how many ores you have mined.
