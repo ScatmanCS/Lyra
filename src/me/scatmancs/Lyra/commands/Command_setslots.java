@@ -31,7 +31,7 @@ public class Command_setslots
   
   public boolean onCommand(CommandSender sender, Command command, String label, String[] arguments)
   {
-    if (sender.hasPermission("utilities.command.setslots")) {
+    if (sender.hasPermission("lyra.command.setslots")) {
       if (arguments.length < 1)
       {
         sender.sendMessage(new ColorHandler().translate("&cUsage: /" + label + " <amount>"));

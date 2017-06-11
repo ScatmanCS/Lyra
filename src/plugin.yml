@@ -7,3 +7,9 @@ commands:
   setslots:
   ping:
   report:
+  crate:
+  list:
+  staffmode:
+    aliases: [staff, mod, h]
+  vanish:
+    aliases: [v]    
