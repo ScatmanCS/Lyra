@@ -1,15 +1,11 @@
 main: me.scatmancs.Lyra.Lyra
 author: ScatmanCS
 name: Lyra
+version: 2.0
 
 commands:
   ores:
-  setslots:
   ping:
   report:
   crate:
   list:
-  staffmode:
-    aliases: [staff, mod, h]
-  vanish:
-    aliases: [v]    

@@ -1,13 +1,11 @@
 package me.scatmancs.Lyra.utils;
 
-import me.scatmancs.Lyra.keys.KeyManager;
-import me.scatmancs.Lyra.listeners.StaffModeListener;
+import java.util.Random;
 
 public class Utilities {
  
  private static Utilities instance;	
- private KeyManager keyManager; 
- private StaffModeListener staffModeListener;
+ private Random random = new Random();
  
  public static Utilities getInstance()
  {
@@ -16,14 +14,9 @@ public class Utilities {
     }
     return instance;
  } 
- 
- public KeyManager getKeyManager()
+
+ public Random getRandom()
  {
-     return this.keyManager;
- }
- 
- public StaffModeListener getStaffModeListener()
- {
-	 return this.staffModeListener;
+   return this.random;
  }
 }

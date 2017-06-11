@@ -63,9 +63,10 @@ public class Command_report
         return true;
       }
       Player target = Bukkit.getServer().getPlayerExact(arguments[0]);
-      if (target.equals(player))
+      if(target.getName().equals(sender.getName()))
       {
-        player.sendMessage(new ColorHandler().translate("&cYou can not report yourself."));
+    	  sender.sendMessage(new ColorHandler().translate("&cYou cannot report yourself!"));
+    	  return true;
       }
       else if (isCooldownActive(player))
       {
