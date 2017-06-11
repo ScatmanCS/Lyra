@@ -6,8 +6,11 @@ import me.scatmancs.Lyra.commands.Command_list;
 import me.scatmancs.Lyra.commands.Command_ores;
 import me.scatmancs.Lyra.commands.Command_ping;
 import me.scatmancs.Lyra.commands.Command_report;
+import me.scatmancs.Lyra.fixes.AntiPEXCrash;
+import me.scatmancs.Lyra.fixes.BoatGlitchFix;
 import me.scatmancs.Lyra.fixes.HitDelayFix;
 import me.scatmancs.Lyra.handlers.RecipeHandler;
+import me.scatmancs.Lyra.listeners.BottledXPListener;
 import me.scatmancs.Lyra.listeners.DonatorJoinListener;
 import me.scatmancs.Lyra.listeners.ElevatorListener;
 import me.scatmancs.Lyra.listeners.WeatherListener;
@@ -35,6 +38,9 @@ public class Lyra extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new DonatorJoinListener(), this);
 		getServer().getPluginManager().registerEvents(new WeatherListener(), this);
 		getServer().getPluginManager().registerEvents(new HitDelayFix(), this);
+		getServer().getPluginManager().registerEvents(new BottledXPListener(), this);
+		getServer().getPluginManager().registerEvents(new BoatGlitchFix(), this);
+		getServer().getPluginManager().registerEvents(new AntiPEXCrash(), this);
 	}
 	
 	public void loadConfig()
