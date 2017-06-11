@@ -4,4 +4,6 @@ name: Lyra
 
 commands:
   ores:
-    description: Check how many ores you have mined.
+  setslots:
+  ping:
+  report:
