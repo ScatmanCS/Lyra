@@ -7,6 +7,7 @@ import me.scatmancs.Lyra.commands.Command_ores;
 import me.scatmancs.Lyra.commands.Command_ping;
 import me.scatmancs.Lyra.commands.Command_report;
 import me.scatmancs.Lyra.fixes.HitDelayFix;
+import me.scatmancs.Lyra.handlers.RecipeHandler;
 import me.scatmancs.Lyra.listeners.DonatorJoinListener;
 import me.scatmancs.Lyra.listeners.ElevatorListener;
 import me.scatmancs.Lyra.listeners.WeatherListener;
@@ -18,12 +19,14 @@ public class Lyra extends JavaPlugin {
 		getLogger().info("Lyra has been enabled!");
 		registerListeners();
 		registerCommands();
+		RecipeHandler.getInstance().enableRecipes();
 		// loadConfig();
 	}
 	
 	public void onDisable()
 	{
 		getLogger().info("Lyra has been enabled!");
+		RecipeHandler.getInstance().disableRecipes();
 	}
 	
 	public void registerListeners()
