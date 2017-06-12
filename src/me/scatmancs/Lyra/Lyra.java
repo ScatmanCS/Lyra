@@ -29,7 +29,15 @@ import me.scatmancs.Lyra.commands.Command_notes;
 import me.scatmancs.Lyra.commands.Command_ores;
 import me.scatmancs.Lyra.commands.Command_ping;
 import me.scatmancs.Lyra.commands.Command_report;
+import me.scatmancs.Lyra.fixes.AntiPEXCrash;
+import me.scatmancs.Lyra.fixes.BoatGlitchFix;
+import me.scatmancs.Lyra.fixes.HitDelayFix;
 import me.scatmancs.Lyra.handlers.ColorHandler;
+import me.scatmancs.Lyra.listeners.BottledXPListener;
+import me.scatmancs.Lyra.listeners.DonatorJoinListener;
+import me.scatmancs.Lyra.listeners.ElevatorListener;
+import me.scatmancs.Lyra.listeners.NotesListener;
+import me.scatmancs.Lyra.listeners.WeatherListener;
 import sun.rmi.transport.proxy.CGIHandler;
 
 
@@ -105,6 +113,15 @@ public class Lyra
     Bukkit.getServer().getPluginCommand("ores").setExecutor(new Command_ores());
     Bukkit.getServer().getPluginCommand("ping").setExecutor(new Command_ping());
     Bukkit.getServer().getPluginCommand("report").setExecutor(new Command_report());
+      
+    getServer().getPluginManager().registerEvents(new BottledXPListener(), this);
+    getServer().getPluginManager().registerEvents(new DonatorJoinListener(), this);
+    getServer().getPluginManager().registerEvents(new ElevatorListener(), this);
+    getServer().getPluginManager().registerEvents(new NotesListener(), this);
+    getServer().getPluginManager().registerEvents(new WeatherListener(), this);
+    getServer().getPluginManager().registerEvents(new AntiPEXCrash(), this);
+    getServer().getPluginManager().registerEvents(new BoatGlitchFix(), this);
+    getServer().getPluginManager().registerEvents(new HitDelayFix(), this);
     
     long timeMillis = System.currentTimeMillis();
     getConsoleSender().sendMessage(new ColorHandler().translate("&9[Lyra] Plugin loaded in " + (System.currentTimeMillis() - timeMillis) + "ms."));
